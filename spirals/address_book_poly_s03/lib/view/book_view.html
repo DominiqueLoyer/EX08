@@ -1,0 +1,64 @@
+<!--
+  Copyright (c) 2015, Adam Tremblay. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+<!-- import polymer-element's definition -->
+
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+ <polymer-element name="book-view">
+  <template>  
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    
+    <table>
+      <tr>
+        <td>Prenom: </td>
+        <td>Nom:    </td>
+        <td>Courriel: </td>
+        <td>Cell:   </td>
+      </tr>
+      <tr>
+        <td>
+          <input id="prenom" type="text" />
+        </td>
+        <td>
+          <input id="nom" type="text" /> 
+        </td>
+        <td>
+          <input id="courriel" type="text"/> 
+        </td>
+        <td>
+          <input id="cell" type="text"/> 
+        </td>
+      </tr>   
+      <tr>
+       
+      <td>
+        
+          <button on-click="{{add}}" class="button">Add</button>
+          <button on-click="{{delete}}" class="button">Remove</button>
+          <br/>
+          <label id="message"></label>
+       
+        </td>
+       </tr>
+    </table>
+         <div width="800">
+           <template repeat="{{contact in contacts.internalList}}">
+                  <table>
+                    <tr>
+                      <td >{{contact.prenom}}</td><td>{{contact.nom}}</td><td float="right">{{contact.courriel}}</td><td float="right">{{contact.cell}}</td>
+                    </tr>
+                  </table>
+           </template>
+         </div>
+       
+    
+  </template>
+  <script type="application/dart" src="book_view.dart"></script>
+</polymer-element>

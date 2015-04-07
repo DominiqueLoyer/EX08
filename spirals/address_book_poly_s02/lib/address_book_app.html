@@ -1,0 +1,66 @@
+<!--
+  Copyright (c) 2015, Adam Tremblay. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../packages/paper_elements/paper_input.html">
+
+<polymer-element name="address-book-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    
+    <table>
+      <tr>
+        <td>
+          Prenom: 
+        </td>
+        <td>
+          Nom: 
+        </td>
+        <td>
+          Courriel: 
+        </td>
+        <td>
+          Cell: 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <paper-input label="Prenom" on-keyup="{{changePrenom}}"></paper-input>
+        </td>
+        <td>
+          <paper-input label="Nom" on-keyup="{{changeNom}}"></paper-input> 
+        </td>
+        <td>
+          <paper-input label="Courriel" on-keyup="{{changeCourriel}}"></paper-input> 
+        </td>
+        <td>
+          <paper-input label="Cell" on-keyup="{{changeCell}}"></paper-input> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {{ prenom }} 
+        </td>
+        <td>
+          {{ nom }} 
+        </td>
+        <td>
+          {{ courriel }} 
+        </td>
+        <td>
+          {{ cell }} 
+        </td>
+      </tr>
+    </table>
+  </template>
+  <script type="application/dart" src="address_book_app.dart"></script>
+</polymer-element>

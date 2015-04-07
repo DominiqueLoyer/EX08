@@ -12,4 +12,12 @@
 
 - Creer un template contenant la table du carnet d'adresse ainsi que les champs pour entrer les donnees.  : Done
 
->>>>>>> cf6248466692bc94d42e580d664ce83cfb70ac65
+- ajouter boutons add et delete
+
+- ajouter fonction retention
+
+- ajouter protection de l'effacement avec nom et prenom comme prerequi
+
+- pagination des contact par ligne et non blocs
+
+fonctionne bien ici

@@ -1,0 +1,8 @@
+ex08
+
+15/20
+
+(-1) pas de .gitignore
+(-2) pas de stockage local
+(-2) ne peut pas modifier un contact
+
